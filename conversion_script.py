@@ -82,8 +82,6 @@ def main(argv):
                         alleles == "ID" or alleles == "II"):
                 continue
             # Ensure chromosomes named the same as in reference file
-            if (chr == "MT"):
-                chr = "M"
             chr = "chr{0}".format(chr)
             # Get the reference base
             ref = ref_dict.get("{0}.{1}".format(chr, pos), "pass")
